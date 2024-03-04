@@ -267,6 +267,7 @@ module cpxcalc
         &,self%solute%noh,self%solute%nnh)
         Call det_bonds(self%solvent%id,self%solvent%atom_xyz,self%solvent%element,self%solvent%is_bonded&
         &,self%solvent%noh,self%solvent%nnh)
+        i
         Call hb_grouping(self%solute%id,self%solute%element,self%solute%is_bonded,self%solute%hb_group)
         Call hb_grouping(self%solvent%id,self%solvent%element,self%solvent%is_bonded,self%solvent%hb_group)
         Call det_rings(self%solute%id,self%solute%is_bonded,self%solute%ring,self%solute%near)
